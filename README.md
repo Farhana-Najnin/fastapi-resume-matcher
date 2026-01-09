@@ -64,9 +64,9 @@ NGROK_AUTH_TOKEN= my_ngrok_auth_token_here
 Load it in Python:
 from dotenv import load_dotenv
 import os
-
 load_dotenv()
 NGROK_TOKEN = os.getenv("NGROK_AUTH_TOKEN")
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 🌐 How the Public URL Works
