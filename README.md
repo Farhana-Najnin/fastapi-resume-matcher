@@ -4,6 +4,8 @@ I built this project to make resume screening smarter. Traditional systems often
 
 It’s a hands-on project where I combined Natural Language Processing, backend API development, and real-time deployment to create something practical for recruiters or anyone curious about AI-driven hiring tools.
 
+----------------------------------------------------------------------------------------------------------------------------------------
+
 🎯 Why I Built This
 
 I wanted to go beyond simple keyword matching. With this project, I can:
@@ -15,6 +17,8 @@ Automatically extract technical skills from unstructured text
 Highlight missing skills for a given role
 
 Generate a clear match score (%) for easy evaluation
+
+----------------------------------------------------------------------------------------------------------------------------------------
 
 🧠 Key Features
 
@@ -29,6 +33,8 @@ High-performance REST API using FastAPI
 Interactive testing via Swagger UI
 
 Public API access through Ngrok
+
+----------------------------------------------------------------------------------------------------------------------------------------
 
 🛠️ Tech Stack I Used
 
@@ -46,12 +52,14 @@ Ngrok – To expose the API publicly
 
 Google Colab – Quick experimentation environment
 
+----------------------------------------------------------------------------------------------------------------------------------------
+
 🔐 Setting Up the Environment
 
 I use Ngrok for public API access, keeping the token secure in a .env file.
 
 Create a .env file:
-NGROK_AUTH_TOKEN=your_ngrok_auth_token_here
+NGROK_AUTH_TOKEN= my_ngrok_auth_token_here
 
 Load it in Python:
 from dotenv import load_dotenv
@@ -59,6 +67,8 @@ import os
 
 load_dotenv()
 NGROK_TOKEN = os.getenv("NGROK_AUTH_TOKEN")
+----------------------------------------------------------------------------------------------------------------------------------------
+
 🌐 How the Public URL Works
 
 When I run the FastAPI server, I use Ngrok to expose it publicly. The URL that Ngrok provides, like:
@@ -67,6 +77,9 @@ https://endurable-thwartedly-somer.ngrok-free.dev/docs
 
 
 only works while the server is running.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
 📌 API Endpoint
 
 POST /match
@@ -84,6 +97,7 @@ Example Response:
   "job_required_skills": ["python", "docker", "aws"],
   "missing_skills": ["docker", "aws"]
 }
+----------------------------------------------------------------------------------------------------------------------------------------
 
 🏗️ Architecture
 Client (Swagger UI / Postman)
@@ -100,6 +114,8 @@ Skill Extraction Engine
         ↓
 Structured JSON Response
 
+----------------------------------------------------------------------------------------------------------------------------------------
+
 🚀 Where I See It Being Useful
 
 Smarter automated resume screening
@@ -109,6 +125,8 @@ Modern Applicant Tracking Systems (ATS)
 AI-powered HR tools
 
 Talent intelligence analytics
+
+----------------------------------------------------------------------------------------------------------------------------------------
 
 🔮 What I Want to Add Next
 
