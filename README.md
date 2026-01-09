@@ -1,11 +1,10 @@
-🚀 FastAPI Resume Matcher
+----------------------------------------------------------------------------------------------------------------------------------------🚀 FastAPI Resume Matcher
 
 I built this project to make resume screening smarter. Traditional systems often rely on keyword matching, which misses context and true skill alignment. This API uses NLP to understand resumes and job descriptions, giving a more meaningful match.
 
 It’s a hands-on project where I combined Natural Language Processing, backend API development, and real-time deployment to create something practical for recruiters or anyone curious about AI-driven hiring tools.
 
 ----------------------------------------------------------------------------------------------------------------------------------------
-
 🎯 Why I Built This
 
 I wanted to go beyond simple keyword matching. With this project, I can:
@@ -19,7 +18,6 @@ Highlight missing skills for a given role
 Generate a clear match score (%) for easy evaluation
 
 ----------------------------------------------------------------------------------------------------------------------------------------
-
 🧠 Key Features
 
 Transformer-based semantic text matching
@@ -35,7 +33,6 @@ Interactive testing via Swagger UI
 Public API access through Ngrok
 
 ----------------------------------------------------------------------------------------------------------------------------------------
-
 🛠️ Tech Stack I Used
 
 Python – My main programming language
@@ -53,7 +50,6 @@ Ngrok – To expose the API publicly
 Google Colab – Quick experimentation environment
 
 ----------------------------------------------------------------------------------------------------------------------------------------
-
 🔐 Setting Up the Environment
 
 I use Ngrok for public API access, keeping the token secure in a .env file.
@@ -68,7 +64,6 @@ load_dotenv()
 NGROK_TOKEN = os.getenv("NGROK_AUTH_TOKEN")
 
 ----------------------------------------------------------------------------------------------------------------------------------------
-
 🌐 How the Public URL Works
 
 When I run the FastAPI server, I use Ngrok to expose it publicly. The URL that Ngrok provides, like:
@@ -79,7 +74,6 @@ https://endurable-thwartedly-somer.ngrok-free.dev/docs
 only works while the server is running.
 
 ----------------------------------------------------------------------------------------------------------------------------------------
-
 📌 API Endpoint
 
 POST /match
@@ -97,8 +91,8 @@ Example Response:
   "job_required_skills": ["python", "docker", "aws"],
   "missing_skills": ["docker", "aws"]
 }
-----------------------------------------------------------------------------------------------------------------------------------------
 
+----------------------------------------------------------------------------------------------------------------------------------------
 🏗️ Architecture
 Client (Swagger UI / Postman)
         ↓
